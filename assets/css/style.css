@@ -32,7 +32,6 @@ h1 {
 
 h2 {
   font-size: clamp(1rem, 3.2vw, 4rem);
-  line-height: 4.5rem;
   font-weight: 800;
 }
 
@@ -52,7 +51,8 @@ p {
 a {
   text-decoration: none;
   color: unset;
-  font-size: clamp(0.5rem, 1.2vw, 1.4rem);
+  /* font-size: clamp(0.5rem, 1.2vw, 1.4rem); */
+  font-size: 1.4rem;
 }
 
 :root {
@@ -73,6 +73,14 @@ a {
   padding: 1vh 3vw;
   border-radius: 4rem;
   color: white;
+  box-shadow: 0px 38px 50px 0px rgba(5, 121, 107, 0.2);
+}
+
+.button-white {
+  padding: 1vh 3vw;
+  border-radius: 4rem;
+  color: #8593a3;
+  border: 1px solid rgba(133, 147, 163, 0.32);
 }
 
 /* !Header */
@@ -278,7 +286,7 @@ header nav p {
 
 .number {
   position: absolute;
-  left: 4.5rem;
+  left: 15%;
   background: #f6f6f7;
   border: 1px solid #f6f6f7;
   border-radius: 100%;
@@ -309,15 +317,88 @@ header nav p {
 }
 
 .bogen-first {
+  width: 13%;
   position: absolute;
-  bottom: 14rem;
-  left: 26.5rem;
-  /* bottom: 35%;
-  left: 30%; */
+  bottom: 35%;
+  left: 29%;
 }
 
 .bogen-second {
+  width: 13%;
   position: absolute;
-  bottom: 16rem;
-  right: 26.5rem;
+  bottom: 38%;
+  right: 29%;
+}
+
+/* !Section 4 Download */
+
+.download {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.download p:first-of-type {
+  color: var(--red);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.download h2 {
+  max-width: 60%;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.download p:last-of-type {
+  margin-bottom: 2vh;
+}
+
+.download div {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  margin-bottom: 11rem;
+}
+
+.download .button-red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8vw;
+  width: 15.5rem;
+}
+
+.download .button-green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3vw;
+  width: 15.5rem;
+}
+
+/* !Section 5 Woman*/
+
+.woman {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 10vw;
+  gap: 2vw;
+}
+
+.woman article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.woman h2 {
+  margin-bottom: 2vh;
+}
+
+.woman p {
+  margin-bottom: 3vh;
 }
